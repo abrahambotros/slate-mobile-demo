@@ -1,0 +1,42 @@
+{
+	"name": "newApp",
+	"version": "0.0.1",
+	"private": true,
+	"scripts": {
+		"start": "node node_modules/react-native/local-cli/cli.js start",
+		"android": "npm run build && react-native run-android",
+		"build": "webpack --config ./config/webpack.config.dev.js --progress --colors",
+		"ios": "npm run build && react-native run-ios",
+		"test": "jest"
+	},
+	"dependencies": {
+		"immutable": "^3.8.1",
+		"react": "16.0.0-beta.5",
+		"react-dom": "^16.0.0",
+		"react-native": "0.49.1",
+		"react-native-webview-bridge-updated": "^1.0.8",
+		"react-navigation": "^1.0.0-beta.11",
+		"react-redux": "^5.0.6",
+		"react-sortable-hoc": "^0.6.8",
+		"redux": "^3.7.2",
+		"redux-promise": "^0.5.3",
+		"redux-thunk": "^2.2.0",
+		"slate": "^0.25.3",
+		"slate-edit-list": "^0.8.0",
+		"slate-react": "^0.2.1"
+	},
+	"devDependencies": {
+		"babel-jest": "21.2.0",
+		"babel-loader": "^7.1.2",
+		"babel-preset-react-native": "4.0.0",
+		"extract-text-webpack-plugin": "^3.0.1",
+		"jest": "21.2.1",
+		"react-test-renderer": "16.0.0-beta.5",
+		"webpack": "^3.6.0",
+		"webpack-dev-middleware": "^1.12.0",
+		"webpack-hot-middleware": "^2.19.1"
+	},
+	"jest": {
+		"preset": "react-native"
+	}
+}
