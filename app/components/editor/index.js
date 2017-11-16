@@ -1,7 +1,11 @@
 import React, { Component } from 'react';
 import { View, Text, Image, FlatList, TextInput, TouchableOpacity } from 'react-native';
-import { State, Block } from 'slate';
-import { Editor } from 'slate-react-native/src';
+import {
+    Block,
+    State,
+    Value,
+} from "slate";
+import { Editor } from 'slate-react-native';
 import editList from 'slate-edit-list';
 import stateJson from './initialState.json';
 import immutable from 'immutable';
@@ -16,28 +20,28 @@ const plugins = [plugin];
 // To update the highlighting of nodes inside the selection
 // highlightedItems.suppressShouldComponentUpdate = true;
 
-let self;
+// let self;
 
 class TextEditor extends Component {
     constructor(props) {
 		super(props);
-        self = this;
+        // self = this;
 
 		this.state = {
-			state: State.fromJSON(stateJson),
+			state: Value.fromJSON(stateJson),
             parentItems: {}
 		};
 	}
 
     onChange({ state }) {
         console.log('STATE', state)
-        self.setState({
+        this.setState({
             state
         });
     }
 
     call(change) {
-        self.setState({
+        this.setState({
             state: this.state.state.change().call(change).state
         });
     }
@@ -49,7 +53,7 @@ class TextEditor extends Component {
         // Hack to focus on editor or this would not work until one of the items is clicked.
         this.editor.focus();
 
-        self.setState({
+        this.setState({
             parentItems: parentItems
         });
     }
@@ -128,7 +132,7 @@ class TextEditor extends Component {
 
     handleEnterInput(event) {
         if (event.key === 'Enter') {
-            const currentState = self.state.state
+            const currentState = this.state.state
             const parentNode = currentState.document.nodes.get('0')
             const indexToInsert = parentNode.nodes.size
             let listNode =
@@ -158,9 +162,9 @@ class TextEditor extends Component {
                 .insertNodeByKey(parentNode.key, indexToInsert, listNode)
                 .apply()
 
-            self[event.target.id].value = ''
-            self[event.target.id].blur()
-            self.setState({ state: state })
+            this[event.target.id].value = ''
+            this[event.target.id].blur()
+            this.setState({ state: state })
         }
     }
 
