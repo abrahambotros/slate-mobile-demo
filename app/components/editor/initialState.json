@@ -1,159 +1,223 @@
 {
-   "document": {
-       "nodes": [{
-           "kind": "block",
-           "type": "specifiers",
-           "data": {
-               "style": {
-                   "listStyleType": "disc"
-               }
-           },
-           "nodes": [{
-               "kind": "block",
-               "type": "paragraph",
-               "nodes": [{
-                   "kind": "text",
-                   "ranges": [
-                       {
-                           "text": "Input case here"
-                       }
-                   ]
-               }]
-           }, {
-               "kind": "block",
-               "type": "name",
-               "nodes": [{
-                   "kind": "block",
-                   "type": "category",
-                   "nodes": [{
-                       "kind": "text",
-                       "ranges": [{
-                           "text": "Instructions"
-                       }]
-                   }]
-               }, {
-                   "kind": "block",
-                   "type": "options",
-                   "nodes": [{
-                       "kind": "text"
-                   }]
-               }, {
-                   "kind": "block",
-                   "type": "paragraph",
-                   "nodes": [{
-                       "kind": "text",
-                       "ranges": [
-                           {
-                               "text": "Input findings here"
-                           }
-                       ]
-                   }]
-               }, {
-                   "kind": "block",
-                   "type": "specifiers",
-                   "data": {
-                       "style": {
-                           "listStyleType": "disc"
-                       }
-                   },
-                   "nodes": [{
-                       "kind": "block",
-                       "type": "name",
-                       "nodes": [{
-                           "kind": "block",
-                           "type": "paragraph",
-                           "nodes": [{
-                               "kind": "text",
-                               "ranges": [{
-                                   "text": "Hit [TAB] to add details"
-                               }]
-                           }]
-                       }]
-                   }, {
-                       "kind": "block",
-                       "type": "name",
-                       "nodes": [{
-                           "kind": "block",
-                           "type": "paragraph",
-                           "nodes": [{
-                               "kind": "text",
-                               "ranges": [{
-                                   "text": "Add more details"
-                               }]
-                           }]
-                       }]
-                   }, {
-                       "kind": "block",
-                       "type": "image",
-                       "data": {
-                           "src": {
-                               "1": [{
-                                   "mediaType": 1,
-                                   "original": "https://img.washingtonpost.com/wp-apps/imrs.php?src=https://img.washingtonpost.com/news/speaking-of-science/wp-content/uploads/sites/36/2015/10/as12-49-7278-1024x1024.jpg&w=1484"
-                               }, {
-                                   "mediaType": 1,
-                                   "original": "https://img.washingtonpost.com/wp-apps/imrs.php?src=https://img.washingtonpost.com/news/speaking-of-science/wp-content/uploads/sites/36/2015/10/as12-49-7278-1024x1024.jpg&w=1484"
-                               }, {
-                                   "mediaType": 1,
-                                   "original": "https://img.washingtonpost.com/wp-apps/imrs.php?src=https://img.washingtonpost.com/news/speaking-of-science/wp-content/uploads/sites/36/2015/10/as12-49-7278-1024x1024.jpg&w=1484"
-                               }]
-                           }
-                       }
-                   }]
-               }]
-           }, {
-               "kind": "block",
-               "type": "name",
-               "nodes": [{
-                   "kind": "block",
-                   "type": "paragraph",
-                   "nodes": [{
-                       "kind": "text",
-                       "ranges": [{
-                           "text": "Heart Murmur"
-                       }]
-                   }]
-               }, {
-                   "kind": "block",
-                   "type": "specifiers",
-                   "data": {
-                       "style": {
-                           "listStyleType": "disc"
-                       }
-                   },
-                   "nodes": [{
-                       "kind": "block",
-                       "type": "name",
-                       "nodes": [{
-                           "kind": "block",
-                           "type": "paragraph",
-                           "nodes": [{
-                               "kind": "text",
-                               "ranges": [{
-                                   "text": "Detail: Soft midsystolic murmur at the second left intercostal space."
-                               }]
-                           }]
-                       }]
-                   }, {
-                       "kind": "block",
-                       "type": "name",
-                       "nodes": [{
-                           "kind": "block",
-                           "type": "paragraph",
-                           "nodes": [{
-                               "kind": "text",
-                               "ranges": [{
-                                   "text": "Finding: A separate holosystolic murmur at the apex."
-                               }]
-                           }]
-                       }]
-                   }, {
-                       "kind": "block",
-                       "type": "image",
-                       "data": {}
-                   }]
-               }]
-           }]
-       }]
-   }
+    "document": {
+        "nodes": [
+            {
+                "kind": "block",
+                "type": "specifiers",
+                "data": {
+                    "style": {
+                        "listStyleType": "disc"
+                    }
+                },
+                "nodes": [
+                    {
+                        "kind": "block",
+                        "type": "paragraph",
+                        "nodes": [
+                            {
+                                "kind": "text",
+                                "leaves": [
+                                    {
+                                        "text": "Input case here"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "kind": "block",
+                        "type": "name",
+                        "nodes": [
+                            {
+                                "kind": "block",
+                                "type": "category",
+                                "nodes": [
+                                    {
+                                        "kind": "text",
+                                        "leaves": [
+                                            {
+                                                "text": "Instructions"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "kind": "block",
+                                "type": "options",
+                                "nodes": [
+                                    {
+                                        "kind": "text"
+                                    }
+                                ]
+                            },
+                            {
+                                "kind": "block",
+                                "type": "paragraph",
+                                "nodes": [
+                                    {
+                                        "kind": "text",
+                                        "leaves": [
+                                            {
+                                                "text": "Input findings here"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "kind": "block",
+                                "type": "specifiers",
+                                "data": {
+                                    "style": {
+                                        "listStyleType": "disc"
+                                    }
+                                },
+                                "nodes": [
+                                    {
+                                        "kind": "block",
+                                        "type": "name",
+                                        "nodes": [
+                                            {
+                                                "kind": "block",
+                                                "type": "paragraph",
+                                                "nodes": [
+                                                    {
+                                                        "kind": "text",
+                                                        "leaves": [
+                                                            {
+                                                                "text": "Hit [TAB] to add details"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "kind": "block",
+                                        "type": "name",
+                                        "nodes": [
+                                            {
+                                                "kind": "block",
+                                                "type": "paragraph",
+                                                "nodes": [
+                                                    {
+                                                        "kind": "text",
+                                                        "leaves": [
+                                                            {
+                                                                "text": "Add more details"
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "kind": "block",
+                                        "type": "image",
+                                        "data": {
+                                            "src": {
+                                                "1": [
+                                                    {
+                                                        "mediaType": 1,
+                                                        "original": "https://img.washingtonpost.com/wp-apps/imrs.php?src=https://img.washingtonpost.com/news/speaking-of-science/wp-content/uploads/sites/36/2015/10/as12-49-7278-1024x1024.jpg&w=1484"
+                                                    },
+                                                    {
+                                                        "mediaType": 1,
+                                                        "original": "https://img.washingtonpost.com/wp-apps/imrs.php?src=https://img.washingtonpost.com/news/speaking-of-science/wp-content/uploads/sites/36/2015/10/as12-49-7278-1024x1024.jpg&w=1484"
+                                                    },
+                                                    {
+                                                        "mediaType": 1,
+                                                        "original": "https://img.washingtonpost.com/wp-apps/imrs.php?src=https://img.washingtonpost.com/news/speaking-of-science/wp-content/uploads/sites/36/2015/10/as12-49-7278-1024x1024.jpg&w=1484"
+                                                    }
+                                                ]
+                                            }
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "kind": "block",
+                        "type": "name",
+                        "nodes": [
+                            {
+                                "kind": "block",
+                                "type": "paragraph",
+                                "nodes": [
+                                    {
+                                        "kind": "text",
+                                        "leaves": [
+                                            {
+                                                "text": "Heart Murmur"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "kind": "block",
+                                "type": "specifiers",
+                                "data": {
+                                    "style": {
+                                        "listStyleType": "disc"
+                                    }
+                                },
+                                "nodes": [
+                                    {
+                                        "kind": "block",
+                                        "type": "name",
+                                        "nodes": [
+                                            {
+                                                "kind": "block",
+                                                "type": "paragraph",
+                                                "nodes": [
+                                                    {
+                                                        "kind": "text",
+                                                        "leaves": [
+                                                            {
+                                                                "text": "Detail: Soft midsystolic murmur at the second left intercostal space."
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "kind": "block",
+                                        "type": "name",
+                                        "nodes": [
+                                            {
+                                                "kind": "block",
+                                                "type": "paragraph",
+                                                "nodes": [
+                                                    {
+                                                        "kind": "text",
+                                                        "leaves": [
+                                                            {
+                                                                "text": "Finding: A separate holosystolic murmur at the apex."
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "kind": "block",
+                                        "type": "image",
+                                        "data": {}
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
 }
