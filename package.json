@@ -28,8 +28,7 @@
     "redux-promise": "0.5.3",
     "redux-thunk": "2.2.0",
     "slate": "0.30.7",
-    "slate-edit-list": "0.8.0",
-    "slate-react": "0.10.13",
+    "slate-edit-list": "0.10.1",
     "slate-react-native": "file:../slate-react-native"
   }
 }
