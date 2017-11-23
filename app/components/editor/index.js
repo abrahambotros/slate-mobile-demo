@@ -6,7 +6,7 @@ import {
     Value,
 } from "slate";
 import { Editor } from 'slate-react-native';
-import editList from 'slate-edit-list';
+// import editList from 'slate-edit-list';
 import stateJson from './initialState.json';
 import immutable from 'immutable';
 
@@ -14,8 +14,9 @@ const options = {
     types: ['categories'],
     typeItem: 'name'
 }
-const plugin = editList(options);
-const plugins = [plugin];
+// const plugin = editList(options);
+// const plugins = [plugin];
+const plugins = [];
 
 // To update the highlighting of nodes inside the selection
 // highlightedItems.suppressShouldComponentUpdate = true;
@@ -94,16 +95,29 @@ class TextEditor extends Component {
         );
     }
 
+    /**
+     * @function schema
+     * @todo Provide valid schema.
+     */
+
     schema() {
         return {
-            nodes: {
-                categories:   props => this.highlightedList(props),
-                name: props => this.highlightedItems(props)
-            }
+        //     nodes: {
+        //         categories:   props => this.highlightedList(props),
+        //         name: props => this.highlightedItems(props)
+        //     }
         }
     }
 
+    /**
+     * @function renderToolbar
+     * @todo Fix slate-edit-list plugin errors, and re-implement with plugin
+     *     here.
+     */
+
     renderToolbar() {
+        return null;
+        /*
         const { wrapInList, unwrapList, increaseItemDepth, decreaseItemDepth } = plugin.changes;
         const inList = plugin.utils.isSelectionInList(this.state.state);
         const buttons = ['wrap', 'unwrap', 'increase depth', 'decrease depth']
@@ -128,6 +142,7 @@ class TextEditor extends Component {
                  }
             </View>
         );
+        */
     }
 
     handleEnterInput(event) {
@@ -189,7 +204,7 @@ class TextEditor extends Component {
                     ref={(editor) => { this.editor = editor; }}
                     plugins={plugins}
                     style={{flex: 0.6, height: 200, marginTop: 10, borderWidth: 1, borderColor: '#d6d7da', padding: 10 }}
-                    state={this.state.state}
+                    value={this.state.state}
                     onChange={this.onChange}
                     schema={this.schema()}
                 />
